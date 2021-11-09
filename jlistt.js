@@ -11,10 +11,10 @@ const navMenu = document.querySelector('header > nav > .hamburger');
  * @description handles the opening and closing of the hamburger mobile menu
  */
 export const clickHandler = (e) => {
-    e.preventDefault();
-    navMenu.insertAdjacentHTML(
-        'beforeend',
-        `
+  e.preventDefault();
+  navMenu.insertAdjacentHTML(
+    'beforeend',
+    `
     <div class="hamburger-mobile-menu ">
         <div class="close">
           <img src="closeicon.svg" />
@@ -26,24 +26,24 @@ export const clickHandler = (e) => {
         </ul>
       </div>
     `,
-    );
-    const menuList = document.querySelector('.hamburger-mobile-menu');
-    helperFunc('blur(15px)', menuList, 'none', 0);
-    const closer = document.querySelector('.close');
-    closer.addEventListener('click', () => helperFunc('blur(0)', menuList, 'block', '770px'));
-    const ulList = Array.from(document.querySelectorAll('.ulList li'));
+  );
+  const menuList = document.querySelector('.hamburger-mobile-menu');
+  helperFunc('blur(15px)', menuList, 'none', 0);
+  const closer = document.querySelector('.close');
+  closer.addEventListener('click', () => helperFunc('blur(0)', menuList, 'block', '770px'));
+  const ulList = Array.from(document.querySelectorAll('.ulList li'));
 
-    ulList.forEach((list) => {
-        list.addEventListener('click', () => {
-            helperFunc('blur(0)', menuList, 'block', '770px');
-        });
+  ulList.forEach((list) => {
+    list.addEventListener('click', () => {
+      helperFunc('blur(0)', menuList, 'block', '770px');
     });
+  });
 };
 
 // nav list active toggle
 navList.forEach((item) => {
-    item.addEventListener('click', (e) => {
-        document.querySelector('.nav-list.active').classList.remove('active');
-        e.currentTarget.classList.add('active');
-    });
+  item.addEventListener('click', (e) => {
+    document.querySelector('.nav-list.active').classList.remove('active');
+    e.currentTarget.classList.add('active');
+  });
 });
