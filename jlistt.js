@@ -29,16 +29,16 @@ export const clickHandler = (e) => {
     </div>
   `,
   );
-const menuList = document.querySelector('.hamburger-mobile-menu');
-helperFunc('blur(15px)', menuList, 'none', 0);
-const closer = document.querySelector('.close');
+  const menuList = document.querySelector('.hamburger-mobile-menu');
+  helperFunc('blur(15px)', menuList, 'none', 0);
+  const closer = document.querySelector('.close');
   closer.addEventListener('click', () => helperFunc('blur(0)', menuList, 'block', '770px'));
   const ulList = Array.from(document.querySelectorAll('.ulList li'));
 
   ulList.forEach((list) => {
     list.addEventListener('click', () => {
-    helperFunc('blur(0)', menuList, 'block', '770px');
-  });
+      helperFunc('blur(0)', menuList, 'block', '770px');
+    });
   });
 };
 
