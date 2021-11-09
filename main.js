@@ -1,9 +1,9 @@
 import {
-    clickHandler,
-    hamburger,
-    navList,
-    activeHandler,
-    btns,
+  clickHandler,
+  hamburger,
+  navList,
+  activeHandler,
+  btns,
 } from './jlistt.js';
 
 import modalHandler from './popup.js';
@@ -13,7 +13,7 @@ hamburger.addEventListener('click', clickHandler);
 
 // nav list active toggle
 navList.forEach((item) => {
-    item.addEventListener('click', activeHandler);
+  item.addEventListener('click', activeHandler);
 });
 
 // handle button click for modal popup
