@@ -68,7 +68,7 @@ export default function modalHandler(e) {
 `;
   // check if language list is more than 3
   if (!langList4) {
-      model.querySelector('.optional').style.display = 'none';
+    model.querySelector('.optional').style.display = 'none';
   }
   document.querySelector('body').insertAdjacentElement('afterbegin', model);
   model.querySelector('#closeImg').addEventListener('click', () => model.remove());
