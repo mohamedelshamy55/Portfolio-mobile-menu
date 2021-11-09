@@ -1,3 +1,4 @@
+import cmod from './cmod.js';
 import cardModel from './cmod.js';
 import { findItem } from './querysel.js';
 
@@ -8,22 +9,22 @@ import { findItem } from './querysel.js';
  * @description {handles modal popup}
  */
 export default function modalHandler(e) {
-    const card = findItem(e.currentTarget, cardModel); // find the item in the model
-    const {
-        imgSrc,
-        header,
-        authorLang,
-        authorList1,
-        authorList2,
-        para,
-        langList1,
-        langList2,
-        langList3,
-        langList4,
-    } = card;
-    const modal = document.createElement('section');
-    modal.className = 'modal';
-    modal.innerHTML = `
+  const card = findItem(e.currentTarget, cmod); // find the item in the model
+  const {
+    imgSrc,
+    header,
+    authorLang,
+    authorList1,
+    authorList2,
+    para,
+    langList1,
+    langList2,
+    langList3,
+    langList4,
+  } = card;
+  const model = document.createElement('section');
+    model.className = 'modal';
+    model.innerHTML = `
   <div class="card modal-card">
   <div class="card-details">
   <header>
@@ -68,8 +69,8 @@ export default function modalHandler(e) {
 `;
     // check if language list is more than 3
     if (!langList4) {
-        modal.querySelector('.optional').style.display = 'none';
+        model.querySelector('.optional').style.display = 'none';
     }
-    document.querySelector('body').insertAdjacentElement('afterbegin', modal);
-    modal.querySelector('#closeImg').addEventListener('click', () => modal.remove());
+    document.querySelector('body').insertAdjacentElement('afterbegin', model);
+    model.querySelector('#closeImg').addEventListener('click', () => model.remove());
 }
