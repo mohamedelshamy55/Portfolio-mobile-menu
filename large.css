@@ -151,7 +151,7 @@
     margin: 0;
   }
 
-  section.card-container>div.card figure img {
+  section.card-container > div.card figure img {
     transition: transform 0.7s;
   }
 
@@ -186,7 +186,7 @@
     margin-bottom: 127px;
   }
 
-  footer .contact-heading>p {
+  footer .contact-heading > p {
     margin: 12px 0 36px;
   }
 
