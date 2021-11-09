@@ -1,5 +1,4 @@
 import cmod from './cmod.js';
-import cardModel from './cmod.js';
 import { findItem } from './querysel.js';
 
 /**
@@ -23,8 +22,8 @@ export default function modalHandler(e) {
     langList4,
   } = card;
   const model = document.createElement('section');
-    model.className = 'modal';
-    model.innerHTML = `
+  model.className = 'modal';
+  model.innerHTML = `
   <div class="card modal-card">
   <div class="card-details">
   <header>
@@ -67,10 +66,10 @@ export default function modalHandler(e) {
   </div>
   </div>
 `;
-    // check if language list is more than 3
-    if (!langList4) {
-        model.querySelector('.optional').style.display = 'none';
-    }
-    document.querySelector('body').insertAdjacentElement('afterbegin', model);
-    model.querySelector('#closeImg').addEventListener('click', () => model.remove());
+  // check if language list is more than 3
+  if (!langList4) {
+      model.querySelector('.optional').style.display = 'none';
+  }
+  document.querySelector('body').insertAdjacentElement('afterbegin', model);
+  model.querySelector('#closeImg').addEventListener('click', () => model.remove());
 }
