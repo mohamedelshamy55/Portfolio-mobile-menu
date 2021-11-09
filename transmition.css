@@ -25,15 +25,19 @@
   0% {
     opacity: 0;
   }
+
   25% {
     opacity: 0.25;
   }
+
   50% {
     opacity: 0.5;
   }
+
   75% {
     opacity: 0.75;
   }
+
   100% {
     opacity: 1;
   }
@@ -43,15 +47,19 @@
   0% {
     opacity: 0;
   }
+
   25% {
     opacity: 0.25;
   }
+
   50% {
     opacity: 0.5;
   }
+
   75% {
     opacity: 0.75;
   }
+
   100% {
     opacity: 1;
   }
@@ -61,15 +69,19 @@
   0% {
     opacity: 0;
   }
+
   25% {
     opacity: 0.25;
   }
+
   50% {
     opacity: 0.5;
   }
+
   75% {
     opacity: 0.75;
   }
+
   100% {
     opacity: 1;
   }
@@ -82,6 +94,7 @@
     top: -830px;
     opacity: 0;
   }
+
   to {
     top: 0;
     opacity: 1;
@@ -93,6 +106,7 @@
     top: -830px;
     opacity: 0;
   }
+
   to {
     top: 0;
     opacity: 1;
@@ -104,6 +118,7 @@
     top: -830px;
     opacity: 0;
   }
+
   to {
     top: 0;
     opacity: 1;
@@ -117,6 +132,7 @@
     right: -800px;
     opacity: 0;
   }
+
   to {
     right: 0;
     opacity: 1;
@@ -128,6 +144,7 @@
     right: -800px;
     opacity: 0;
   }
+
   to {
     right: 0;
     opacity: 1;
@@ -139,6 +156,7 @@
     right: -800px;
     opacity: 0;
   }
+
   to {
     right: 0;
     opacity: 1;
@@ -152,6 +170,7 @@
     left: -500px;
     opacity: 0;
   }
+
   to {
     left: 0;
     opacity: 1;
@@ -163,6 +182,7 @@
     left: -500px;
     opacity: 0;
   }
+
   to {
     left: 0;
     opacity: 1;
@@ -174,6 +194,7 @@
     left: -500px;
     opacity: 0;
   }
+
   to {
     left: 0;
     opacity: 1;
@@ -190,27 +211,27 @@ header .logo .logo-blink {
   animation: blink 0.8s linear infinite;
 }
 
-.hero-section>h1 {
+.hero-section > h1 {
   -webkit-animation: slidetop 3s;
   animation: slidetop 3s;
   position: relative;
 }
 
-.hero-section>span,
-.about-section>span {
+.hero-section > span,
+.about-section > span {
   -webkit-animation: slideright 3s;
   animation: slideright 3s;
   position: relative;
 }
 
-.hero-section>p {
+.hero-section > p {
   -webkit-animation: slidetop 2s;
   animation: slidetop 2s;
   position: relative;
 }
 
-.hero-section>ul,
-.about-section>ul {
+.hero-section > ul,
+.about-section > ul {
   display: flex;
   margin: 0;
   list-style: none;
@@ -221,15 +242,15 @@ header .logo .logo-blink {
   position: relative;
 }
 
-header nav .desktop-menu ul>li {
+header nav .desktop-menu ul > li {
   transition: border-bottom ease-in 0.5s;
 }
 
-header nav .desktop-menu ul>li a:visited {
+header nav .desktop-menu ul > li a:visited {
   color: unset;
 }
 
-header nav .desktop-menu ul>li:hover {
+header nav .desktop-menu ul > li:hover {
   color: var(--primary-color-1);
   border-bottom: solid 2px var(--primary-color-1);
 }
