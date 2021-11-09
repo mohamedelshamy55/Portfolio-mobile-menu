@@ -75,7 +75,7 @@ section.card-container > div.card,
   padding: 0;
 }
 
-.card-details ul.project-lang>li {
+.card-details ul.project-lang > li {
   padding: 4px 6px;
   background: #ebebff;
   border-radius: 8px;
