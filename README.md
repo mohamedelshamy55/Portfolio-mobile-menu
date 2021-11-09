@@ -1,13 +1,16 @@
-# Hellow Microverse
-> This is a first project with Microverse.
+# Portfolio - mobile menu
+> Use basic JavaScript syntax.
+> Use JavaScript to manipulate DOM elements.
+> Use JavaScript events.
 
-![screenshot](https://github.com/mohamedelshamy55/hellow-microverse3/blob/main/site_screenshote.png)
+![screenshot1](https://github.com/mohamedelshamy55/Portfolio-mobile-menu/blob/mohamedelshamy55-patch-1/screenshot1.png)
+![screenshot2](https://github.com/mohamedelshamy55/Portfolio-mobile-menu/blob/mohamedelshamy55-patch-1/screenshot2.png)
 
 
 ## Built With
 - HTML
 - CSS
-
+- JavaScript
 ## Getting Started
 
 
@@ -18,7 +21,6 @@ To get a local copy up and running follow these simple example steps.
 
 - create a new folder
 - acccess the folder via command line
-- run this under the command line: git@github.com:mohamedelshamy55/hellow-microverse3.git
 
 ### Prerequisites
 -Html
