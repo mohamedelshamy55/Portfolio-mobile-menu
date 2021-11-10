@@ -74,6 +74,7 @@ section.card-container > div.card,
   list-style: none;
   padding: 0;
 }
+
 .card-details ul.project-lang > li {
   padding: 4px 6px;
   background: #ebebff;
