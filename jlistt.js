@@ -1,11 +1,13 @@
-import helperFunc from './querysel.js';
+import { helperFunc } from './querysel.js';
 
 export const hamburger = document.querySelector('.toggle');
-const navList = document.querySelectorAll('.nav-list');
+export const navList = document.querySelectorAll('.nav-list');
 export const dropDown = document.querySelector('lang-dropdown');
+export const btns = document.querySelectorAll('.btn');
 const navMenu = document.querySelector('header > nav > .hamburger');
 
 /**
+ *
  * @function {clickHandler}
  * @param {click} e
  * @description handles the opening and closing of the hamburger mobile menu
@@ -15,17 +17,17 @@ export const clickHandler = (e) => {
   navMenu.insertAdjacentHTML(
     'beforeend',
     `
-    <div class="hamburger-mobile-menu ">
-        <div class="close">
-          <img src="closeicon.svg" />
-        </div>
-        <ul class="ulList">
-          <li><a href="#projects">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    `,
+  <div class="hamburger-mobile-menu ">
+    <div class="close">
+      <img src="closeiconw.svg" />
+    </div>
+    <ul class="ulList">
+      <li><a href="#projects">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+  `,
   );
   const menuList = document.querySelector('.hamburger-mobile-menu');
   helperFunc('blur(15px)', menuList, 'none', 0);
@@ -41,9 +43,7 @@ export const clickHandler = (e) => {
 };
 
 // nav list active toggle
-navList.forEach((item) => {
-  item.addEventListener('click', (e) => {
-    document.querySelector('.nav-list.active').classList.remove('active');
-    e.currentTarget.classList.add('active');
-  });
-});
+export const activeHandler = (e) => {
+  document.querySelector('.nav-list.active').classList.remove('active');
+  e.currentTarget.classList.add('active');
+};

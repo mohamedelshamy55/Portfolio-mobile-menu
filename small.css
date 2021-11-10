@@ -110,7 +110,6 @@ section.hero-section {
 }
 
 /* Projects Section */
-
 section.card-container {
   margin-top: 114px;
   display: grid;
@@ -120,7 +119,6 @@ section.card-container {
 }
 
 /* About Section */
-
 .about {
   margin-top: 114px;
   background: #fff;

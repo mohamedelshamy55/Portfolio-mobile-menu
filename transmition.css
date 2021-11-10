@@ -1,4 +1,5 @@
 /* Rotate */
+
 @-moz-keyframes rotate {
   100% {
     -moz-transform: rotate(360deg);
@@ -19,6 +20,7 @@
 }
 
 /* Blink */
+
 @-moz-keyframes blink {
   0% {
     opacity: 0;
@@ -86,6 +88,7 @@
 }
 
 /* SlideTop */
+
 @-moz-keyframes slidetop {
   from {
     top: -830px;
@@ -123,6 +126,7 @@
 }
 
 /* SlideExtremeLeft */
+
 @-moz-keyframes slideextleft {
   from {
     right: -800px;
@@ -160,6 +164,7 @@
 }
 
 /* SlideRight */
+
 @-moz-keyframes slideright {
   from {
     left: -500px;
@@ -212,8 +217,8 @@ header .logo .logo-blink {
   position: relative;
 }
 
-.hero-section > h4,
-.about-section > h4 {
+.hero-section > span,
+.about-section > span {
   -webkit-animation: slideright 3s;
   animation: slideright 3s;
   position: relative;
@@ -237,14 +242,17 @@ header .logo .logo-blink {
   position: relative;
 }
 
-header nav .desktop-menu ul > li a {
-  transition-property: color;
-  transition-timing-function: ease-in;
-  transition-duration: 0.3s;
+header nav .desktop-menu ul > li {
+  transition: border-bottom ease-in 0.5s;
 }
 
-header nav .desktop-menu ul > li a:hover {
+header nav .desktop-menu ul > li a:visited {
+  color: unset;
+}
+
+header nav .desktop-menu ul > li:hover {
   color: var(--primary-color-1);
+  border-bottom: solid 2px var(--primary-color-1);
 }
 
 button.project-btn {
