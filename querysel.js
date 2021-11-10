@@ -12,11 +12,11 @@ const small = document.querySelector('small');
  * @param {string} left  The left position
  */
 export const helperFunc = (blur, list, display, left) => {
-    main.style.filter = blur;
-    hide.forEach((el) => {
-        el.style.display = display;
-    });
-    list.style.left = left;
+  main.style.filter = blur;
+  hide.forEach((el) => {
+    el.style.display = display;
+  });
+  list.style.left = left;
 };
 
 /**
@@ -26,8 +26,8 @@ export const helperFunc = (blur, list, display, left) => {
  * @returns {Object} The object found in the array
  */
 export const findItem = (target, model) => {
-    const { btnId } = target.dataset;
-    return model.find((elem) => elem.id === parseInt(btnId, 10));
+  const { btnId } = target.dataset;
+  return model.find((elem) => elem.id === parseInt(btnId, 10));
 };
 
 /**
@@ -35,7 +35,7 @@ export const findItem = (target, model) => {
  * @param {string} message The error message to be shown
  */
 export const showErr = (message) => {
-    document.querySelector('small').innerText = message;
+  document.querySelector('small').innerText = message;
 };
 
 /**
@@ -43,7 +43,7 @@ export const showErr = (message) => {
  * @param {HTMLSmallElement} small The HTML small element that outputs the error
  */
 export const showSuccess = (small) => {
-    small.innerHTML = '';
+  small.innerHTML = '';
 };
 
 /**
@@ -53,8 +53,8 @@ export const showSuccess = (small) => {
  * @param {string} success The success string
  */
 export const show = (classes, error, success) => {
-    classes.remove(success);
-    classes.add(error);
+  classes.remove(success);
+  classes.add(error);
 };
 
 // Regex to check if the input include a uppercase case letter
@@ -65,22 +65,22 @@ const re = /[A-Z]/g;
  * @param {event} e The event object
  */
 export const formHandler = (e) => {
-    const [name, email, message] = [
-        inputs[0].value.trim(), inputs[1].value.trim(), form.elements[2].value.trim(),
-    ];
-    if (name === '' || name.length < 5) {
-        e.preventDefault();
-        showErr('Name should be at least 5 letters long');
-    } else if (email === '' || /[A-Z]/.test(email)) {
-        e.preventDefault();
-        showErr('E-mail should contain only lowercase letters');
-    } else if (message === '' || message.length < 5) {
-        e.preventDefault();
-        showErr('Message should not be empty and length of message not be less than 5 letters');
-    } else {
-        showSuccess(small);
-        form.submit();
-    }
+  const [name, email, message] = [
+    inputs[0].value.trim(), inputs[1].value.trim(), form.elements[2].value.trim(),
+  ];
+  if (name === '' || name.length < 5) {
+    e.preventDefault();
+    showErr('Name should be at least 5 letters long');
+  } else if (email === '' || /[A-Z]/.test(email)) {
+    e.preventDefault();
+    showErr('E-mail should contain only lowercase letters');
+  } else if (message === '' || message.length < 5) {
+    e.preventDefault();
+    showErr('Message should not be empty and length of message not be less than 5 letters');
+  } else {
+    showSuccess(small);
+    form.submit();
+  }
 };
 
 /**
@@ -88,19 +88,19 @@ export const formHandler = (e) => {
  * @param {event} e The event object
  */
 export const blurHandler = (e) => {
-    const [target, value, classes] = [
-        e.currentTarget.type,
-        e.currentTarget.value,
-        e.currentTarget.classList,
-    ];
+  const [target, value, classes] = [
+    e.currentTarget.type,
+    e.currentTarget.value,
+    e.currentTarget.classList,
+  ];
 
-    if ((target === 'text' && value.length < 5) || value === '') {
-        show(classes, 'error', 'success');
-    } else if ((target === 'email' && re.test(value)) || value === '') {
-        show(classes, 'error', 'success');
-    } else if (target === 'textarea' && (value === '' || value.length < 5)) {
-        show(classes, 'error', 'success');
-    } else {
-        show(classes, 'success', 'error');
-    }
+  if ((target === 'text' && value.length < 5) || value === '') {
+    show(classes, 'error', 'success');
+  } else if ((target === 'email' && re.test(value)) || value === '') {
+    show(classes, 'error', 'success');
+  } else if (target === 'textarea' && (value === '' || value.length < 5)) {
+    show(classes, 'error', 'success');
+  } else {
+    show(classes, 'success', 'error');
+  }
 };
