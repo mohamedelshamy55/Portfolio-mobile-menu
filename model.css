@@ -24,7 +24,7 @@ section.model.close {
   animation-duration: 1s;
 }
 
-section.model > .model-card {
+section.model>.model-card {
   position: relative;
   padding: 18px 16px 20px;
   -webkit-animation-name: slidetop;
@@ -33,73 +33,73 @@ section.model > .model-card {
   animation-duration: 1s;
 }
 
-.model-card > p {
+.model-card>p {
   margin: 12px 0;
 }
 
-.model-card > .card-details header {
+.model-card>.card-details header {
   align-items: center;
   margin: 2px 0 22px;
   padding: 0;
   position: unset;
 }
 
-.model-card > .card-details header h2 {
+.model-card>.card-details header h2 {
   margin: 0;
 }
 
-.model-card > .card-details header img {
+.model-card>.card-details header img {
   cursor: pointer;
   width: 20px;
 }
 
-.model-card > .card-details > div.author-lang {
+.model-card>.card-details>div.author-lang {
   margin: 0 0 20px;
 }
 
-.model-card > .card-details > figure {
+.model-card>.card-details>figure {
   margin: 0;
 }
 
-.model-card > .card-details > figure > img {
+.model-card>.card-details>figure>img {
   width: 100%;
 }
 
-.model-card > .card-details > .card-flex {
+.model-card>.card-details>.card-flex {
   display: flex;
   flex-direction: column;
 }
 
-.model-card > .card-details > .card-flex > p.project-desc {
+.model-card>.card-details>.card-flex>p.project-desc {
   margin: 12px 0;
 }
 
-.model-card > .card-details > ul.project-lang {
+.model-card>.card-details>ul.project-lang {
   margin-bottom: 20px;
 }
 
-.model-card > .card-details hr {
+.model-card>.card-details hr {
   width: 100%;
   border: none;
   border-top: 2px solid #ebecf0;
   margin: 0 0 25px;
 }
 
-.model-card > .card-details .action-btn {
+.model-card>.card-details .action-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 4px;
 }
 
-.model-card > .card-details .action-btn > button {
+.model-card>.card-details .action-btn>button {
   padding: 8px;
   width: 146px;
   margin-bottom: 4px;
   height: 48px;
 }
 
-.model-card > .card-details .action-btn button:first-child {
+.model-card>.card-details .action-btn button:first-child {
   margin-right: 12px;
 }
 
@@ -122,12 +122,10 @@ section.model > .model-card {
   section.model {
     padding: 8% 20%;
   }
-
-  .model-card > .card-details {
+  .model-card>.card-details {
     margin: 0;
   }
-
-  .model-card > .card-details header {
+  .model-card>.card-details header {
     margin: 2px 0 0;
   }
 }
@@ -136,29 +134,23 @@ section.model > .model-card {
   section.model {
     padding: 10% 10%;
   }
-
-  section.model > .model-card {
+  section.model>.model-card {
     padding: 18px 16px 40px;
   }
-
-  .model-card > .card-details hr {
+  .model-card>.card-details hr {
     display: none;
   }
-
-  .model-card > .card-details > figure {
+  .model-card>.card-details>figure {
     height: 80%;
   }
-
-  .model-card > .card-details > figure > img {
+  .model-card>.card-details>figure>img {
     height: 100%;
   }
-
-  .model-card > .card-details > .card-flex {
+  .model-card>.card-details>.card-flex {
     flex-direction: row;
     margin-top: -100px;
   }
-
-  .model-card > .card-details > .card-flex > p.project-desc {
+  .model-card>.card-details>.card-flex>p.project-desc {
     margin: 0;
     width: 50%;
     margin-right: 10px;
@@ -169,12 +161,10 @@ section.model > .model-card {
   section.model {
     padding: 2% 20%;
   }
-
-  .model-card > .card-details > figure {
+  .model-card>.card-details>figure {
     height: 90%;
   }
-
-  .model-card > .card-details > .card-flex {
+  .model-card>.card-details>.card-flex {
     flex-direction: row;
     margin-top: -30px;
   }
@@ -184,7 +174,6 @@ section.model > .model-card {
   .model-card .action-btn button a {
     font-size: 9px;
   }
-
   .model-card .action-btn button a img {
     width: 13px;
   }
