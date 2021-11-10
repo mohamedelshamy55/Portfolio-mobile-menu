@@ -122,9 +122,11 @@ section.model > .model-card {
   section.model {
     padding: 8% 20%;
   }
+
   .model-card > .card-details {
     margin: 0;
   }
+
   .model-card > .card-details header {
     margin: 2px 0 0;
   }
@@ -134,22 +136,28 @@ section.model > .model-card {
   section.model {
     padding: 10% 10%;
   }
+
   section.model > .model-card {
     padding: 18px 16px 40px;
   }
+
   .model-card > .card-details hr {
     display: none;
   }
+
   .model-card > .card-details > figure {
     height: 80%;
   }
+
   .model-card > .card-details > figure > img {
     height: 100%;
   }
+
   .model-card > .card-details > .card-flex {
     flex-direction: row;
     margin-top: -100px;
   }
+
   .model-card > .card-details > .card-flex > p.project-desc {
     margin: 0;
     width: 50%;
@@ -161,9 +169,11 @@ section.model > .model-card {
   section.model {
     padding: 2% 20%;
   }
+
   .model-card > .card-details > figure {
     height: 90%;
   }
+
   .model-card > .card-details > .card-flex {
     flex-direction: row;
     margin-top: -30px;
@@ -174,6 +184,7 @@ section.model > .model-card {
   .model-card .action-btn button a {
     font-size: 9px;
   }
+
   .model-card .action-btn button a img {
     width: 13px;
   }
