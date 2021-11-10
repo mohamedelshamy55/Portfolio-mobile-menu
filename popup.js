@@ -8,22 +8,22 @@ import { findItem } from './querysel.js';
  * @description {handles model popup}
  */
 export default function modelHandler(e) {
-    const card = findItem(e.currentTarget, cardModel); // find the item in the model
-    const {
-        imgSrc,
-        header,
-        authorLang,
-        authorList1,
-        authorList2,
-        para,
-        langList1,
-        langList2,
-        langList3,
-        langList4,
-    } = card;
-    const model = document.createElement('section');
-    model.className = 'model';
-    model.innerHTML = `
+  const card = findItem(e.currentTarget, cardModel); // find the item in the model
+  const {
+    imgSrc,
+    header,
+    authorLang,
+    authorList1,
+    authorList2,
+    para,
+    langList1,
+    langList2,
+    langList3,
+    langList4,
+  } = card;
+  const model = document.createElement('section');
+  model.className = 'model';
+  model.innerHTML = `
   <div class="card model-card">
   <div class="card-details">
   <header>
@@ -66,10 +66,10 @@ export default function modelHandler(e) {
   </div>
   </div>
 `;
-    // check if language list is more than 3
-    if (!langList4) {
-        model.querySelector('.optional').style.display = 'none';
-    }
-    document.querySelector('body').insertAdjacentElement('afterbegin', model);
-    model.querySelector('#closeImg').addEventListener('click', () => model.remove());
+  // check if language list is more than 3
+  if (!langList4) {
+    model.querySelector('.optional').style.display = 'none';
+  }
+  document.querySelector('body').insertAdjacentElement('afterbegin', model);
+  model.querySelector('#closeImg').addEventListener('click', () => model.remove());
 }
