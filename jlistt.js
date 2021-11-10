@@ -37,7 +37,7 @@ export const clickHandler = (e) => {
 
   ulList.forEach((list) => {
     list.addEventListener('click', () => {
-        helperFunc('blur(0)', menuList, 'block', '770px');
+      helperFunc('blur(0)', menuList, 'block', '770px');
     });
   });
 };
