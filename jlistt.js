@@ -26,7 +26,7 @@ export const clickHandler = (e) => {
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    </div>
+  </div>
   `,
   );
   const menuList = document.querySelector('.hamburger-mobile-menu');
@@ -37,7 +37,7 @@ export const clickHandler = (e) => {
 
   ulList.forEach((list) => {
     list.addEventListener('click', () => {
-      helperFunc('blur(0)', menuList, 'block', '770px');
+        helperFunc('blur(0)', menuList, 'block', '770px');
     });
   });
 };
