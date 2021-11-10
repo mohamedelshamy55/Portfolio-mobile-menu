@@ -8,6 +8,13 @@ import {
 
 import modelHandler from './popup.js';
 
+import {
+  inputs,
+  formHandler,
+  form,
+  blurHandler,
+} from './querysel.js';
+
 // hamburger toggle
 hamburger.addEventListener('click', clickHandler);
 
@@ -18,3 +25,9 @@ navList.forEach((item) => {
 
 // handle button click for model popup
 btns.forEach((btn) => btn.addEventListener('click', modelHandler));
+
+inputs.forEach((input) => {
+  input.addEventListener('blur', blurHandler);
+});
+
+form.addEventListener('submit', formHandler);
