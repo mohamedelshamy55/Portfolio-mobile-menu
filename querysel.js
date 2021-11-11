@@ -105,7 +105,8 @@ export const blurHandler = (e) => {
   }
 };
 
-@function autoFIll Handles the auto filling of the inputs with available data in local storage
+/**
+ * @function autoFIll Handles the auto filling of the inputs with available data in local storage
  */
 export const autoFill = () => {
   const data = JSON.parse(localStorage.getItem('data'));
