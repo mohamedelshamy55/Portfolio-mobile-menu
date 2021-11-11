@@ -98,7 +98,7 @@ export const blurHandler = (e) => {
     show(classes, 'error', 'success');
   } else if ((target === 'email' && re.test(value)) || value === '') {
     show(classes, 'error', 'success');
-  } else if target === 'textarea' && re.test(value) || value === "" || value.length < 5) {
+  } else if (target === 'textarea' && re.test(value) || value === "" || value.length < 5) {
     show(classes, 'error', 'success');
   } else {
     show(classes, 'success', 'error');
