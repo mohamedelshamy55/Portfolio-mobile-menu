@@ -74,7 +74,7 @@ export const formHandler = (e) => {
   } else if (email === '' || /[A-Z]/.test(email)) {
     e.preventDefault();
     showErr('E-mail should contain only lowercase letters');
-  } else if (message === '' || message.length < 5) {
+  } else if (message === '' || message.length < 5 || /[A-Z]/.test(message)) {
     e.preventDefault();
     showErr('Message should not be empty and length of message not be less than 5 letters');
   } else {
@@ -98,7 +98,7 @@ export const blurHandler = (e) => {
     show(classes, 'error', 'success');
   } else if ((target === 'email' && re.test(value)) || value === '') {
     show(classes, 'error', 'success');
-  } else if (target === 'textarea' && (value === '' || value.length < 5)) {
+  } else if target === 'textarea' && re.test(value) || value === "" || value.length < 5) {
     show(classes, 'error', 'success');
   } else {
     show(classes, 'success', 'error');
