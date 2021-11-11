@@ -89,6 +89,7 @@ export const formHandler = (e) => {
     e.preventDefault();
     showErr('Message should not be empty and length of message not be less than 5 letters');
   } else {
+    storageHandler(name, email, message);
     showSuccess(small);
     form.submit();
   }
