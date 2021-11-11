@@ -251,8 +251,8 @@ header nav .desktop-menu ul > li a:visited {
 }
 
 header nav .desktop-menu ul > li:hover {
-  color: var(--primary-color-1);
-  border-bottom: solid 2px var(--primary-color-1);
+  color: #1028fe;
+  border-bottom: solid 2px #1028fe;
 }
 
 button.project-btn {

@@ -1,4 +1,4 @@
-import cmod from './cmod.js';
+import cardModel from './cmod.js';
 import { findItem } from './querysel.js';
 
 /**
@@ -8,7 +8,7 @@ import { findItem } from './querysel.js';
  * @description {handles model popup}
  */
 export default function modelHandler(e) {
-  const card = findItem(e.currentTarget, cmod); // find the item in the model
+  const card = findItem(e.currentTarget, cardModel); // find the item in the model
   const {
     imgSrc,
     header,
@@ -55,7 +55,7 @@ export default function modelHandler(e) {
   <hr />
   <div class="action-btn">
     <button class="project-btn" type="button">
-      <a href="https://mohamedelshamy55.github.io/Portfolio-mobile-menu/" target="_blank">See live <img src="liveicon.svg" /></a>
+    <a href="https://mohamedelshamy55.github.io/Portfolio-mobile-menu/" target="_blank">See live <img src="liveicon.svg" /></a>
     </button>
     <button class="project-btn" type="button">
       <a href="https://mohamedelshamy55.github.io/Portfolio-mobile-menu/" target="_blank">See Source <img src="giticon.svg" /></a>
