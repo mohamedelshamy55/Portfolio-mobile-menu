@@ -13,6 +13,7 @@ import {
   formHandler,
   form,
   blurHandler,
+  autoFill,
 } from './querysel.js';
 
 // hamburger toggle
@@ -31,3 +32,6 @@ inputs.forEach((input) => {
 });
 
 form.addEventListener('submit', formHandler);
+
+// auto fills the inputs with available data in the local storage
+autoFill();
